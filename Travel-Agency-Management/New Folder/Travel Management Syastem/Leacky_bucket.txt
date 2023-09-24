@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int c,a,m;
+    float s;
+    printf("enter the c bucket capacity:");
+    scanf("%d",&c);
+    printf("enter the token arrival rate:");
+    scanf("%d",&a);
+    printf("enter the maximum burst rate:");
+    scanf("%d",&m);
+    s=((c)/(m-a));
+    printf("burst length=%f",s);
+    return 0;
+}
+
+//Output:-
+enter the c bucket capacity:10
+enter the token arrival rate:8
+enter the maximum burst rate:6
+burst length=-5.000000
